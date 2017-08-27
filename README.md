@@ -15,9 +15,8 @@ $ injoy push
 
 ### TODO
 - injoy.config.js
-- dist fresh detect
-- update
-- remove injoy from project
+- injoy update
+- injoy remove
 - unit test
 - eslint
 - colorful log
