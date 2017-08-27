@@ -1,0 +1,29 @@
+{
+  "name": "injoy-cli",
+  "version": "0.0.2",
+  "description": "Injoy-cli is a command line tool to help you enjoy coding and life",
+  "bin": {
+    "injoy": "./bin/injoy.js",
+    "injoy-init": "./bin/injoy-init.js",
+    "injoy-push": "./bin/injoy-push.js",
+    "injoy-pushexec": "./bin/injoy-pushexec.js"
+  },
+  "preferGlobal": "true",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:buildAll/injoy-cli.git"
+  },
+  "keywords": [
+    "cli"
+  ],
+  "author": "zhaobiao",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.11.0",
+    "lodash": "^4.17.4"
+  },
+  "devDependencies": {}
+}
