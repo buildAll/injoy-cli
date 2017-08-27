@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-console.log('start injoy...')
+console.log('you\'re injoying...')
 
 process.title = 'injoy'
 
