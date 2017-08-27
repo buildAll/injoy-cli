@@ -54,7 +54,7 @@ FakeJson.prototype._create = function () {
       scripts: this.realScripts
     }, this.fakeContent)))
   } else {
-    throw new Error('no real json found. please call keepRealJson first!')
+    throw new Error('fake json create fail! no real json found. please call keepRealJson first.')
   }
 }
 
@@ -62,7 +62,7 @@ FakeJson.prototype._removeFake = function () {
   if (isExist(this.tmpRealPath)) {
     isExist(this.jsonPath) &&  deleteFile(this.jsonPath)
   } else {
-    throw new Error('no real json found. please call keepRealJson first!')
+    throw new Error('fake json remove fail! no real json found. please call keepRealJson first!')
   }
 }
 
