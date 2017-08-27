@@ -6,7 +6,7 @@ const log = console.log
 
 function updatePkgJson (newContent) {
   log()
-  log('it is going to update package.json to add npm scripts......')
+  log('injoy is updating package.json')
   log()
   const pkgPath = path.join(cwd, 'package.json')
   const pkgContent = require(pkgPath)
