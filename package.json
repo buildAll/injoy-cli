@@ -1,12 +1,12 @@
 {
   "name": "injoy-cli",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Injoy-cli is a command line tool to help you enjoy coding and life",
   "bin": {
-    "injoy": "./bin/injoy.js",
-    "injoy-init": "./bin/injoy-init.js",
-    "injoy-push": "./bin/injoy-push.js",
-    "injoy-pushexec": "./bin/injoy-pushexec.js"
+    "injoy": "./bin/injoy",
+    "injoy-init": "./bin/injoy-init",
+    "injoy-push": "./bin/injoy-push",
+    "injoy-pushexec": "./bin/injoy-pushexec"
   },
   "preferGlobal": "true",
   "scripts": {

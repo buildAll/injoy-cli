@@ -11,3 +11,13 @@ $ cd myproject
 $ injoy init
 $ injoy push
 ```
+
+
+### TODO
+- injoy.config.js
+- dist fresh detect
+- update
+- remove injoy from project
+- unit test
+- eslint
+- colorful log

@@ -4,7 +4,6 @@ const merge = require('lodash').merge
 const cwd = process.cwd()
 const log = console.log
 
-
 function updatePkgJson (newContent) {
   log()
   log('it is going to update package.json to add npm scripts......')
