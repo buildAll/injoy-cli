@@ -44,7 +44,7 @@ FakeJson.prototype._keepRealJson = function () {
 
   rename(this.jsonPath, this.tmpRealPath)
   log()
-  log(`rename ${this.jsonPath} to ${this.tmpRealPath}`)
+  log(`get fake json`)
   log()
 }
 
@@ -72,7 +72,7 @@ FakeJson.prototype.resetRealJson = function () {
   this._removeFake()
   rename(this.tmpRealPath, this.jsonPath)
   log()
-  log(`rename ${this.tmpRealPath} to ${this.jsonPath}`)
+  log(`remove fake json`)
   log()
 }
 
