@@ -38,9 +38,7 @@ function FakeJson (fakeContent, fileName) {
 }
 
 FakeJson.prototype._keepRealJson = function () {
-  const realJson = require(this.jsonPath)
-
-  this.realScripts = realJson.scripts
+  this.realJson = require(this.jsonPath)
 
   rename(this.jsonPath, this.tmpRealPath)
   log()
@@ -50,9 +48,7 @@ FakeJson.prototype._keepRealJson = function () {
 
 FakeJson.prototype._create = function () {
   if (isExist(this.tmpRealPath)) {
-    writeFile(this.jsonPath, formatContent(merge({
-      scripts: this.realScripts
-    }, this.fakeContent)))
+    writeFile(this.jsonPath, formatContent(merge(this.realJson, this.fakeContent)))
   } else {
     throw new Error('fake json create fail! no real json found. please call keepRealJson first.')
   }
